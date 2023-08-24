@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <title>MyTwitchChannel Survey Form</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <section id="inside-background">
+        <h1 id="title">MyTwitchChannel Survey Form</h1>
+        <p id="description">Thank you for your feedback to improve our content! <3</p>
+        <form id="survey-form" method="post" action='https://survey-demo.freecodecamp.org'>
+        <fieldset>
+            <label id="name-label" for="name">Enter Your Name: <input type="text" id="name" name="name" placeholder="First and Last Name" required /></label>
+            <label id="email-label" for="email">Enter Your Email: <input type="email" id="email" name="email" placeholder="Email Address" required /></label>
+            <label id="number-label" for="number">Enter Your Age (optional): <input type="number" id="number" min="12" max="120" placeholder="12+" /></label>
+        </fieldset>
+
+        <fieldset>
+            <label id="dropdown-label" for="dropdown">How did you hear about us? 
+            <select id="dropdown">
+                <option>--Select One--</option>
+                <option>Twitch</option>
+                <option>Twitter</option>
+                <option>TikTok</option>
+                <option>Other</option>
+            </select>
+            </label>
+
+            <label>Would you reccomend our content to a friend?</label>
+            <label for="yes-reccomend"><input id="yes-reccomend" type="radio" name="recommendation" class="inline" value="yes" /> Yes</label>
+            <label for="no-reccomend"><input id="no-reccomend" type="radio" name="recommendation" class="inline" value="no" /> No</label>
+
+            <label>What types of content would you like to see more of from us? (Check all that apply)</label>
+            <label for="loadout">
+            <input id="loadout" type="checkbox" name="content-forms" value="loadout"/> Prank Videos
+            </label>
+            <label for="hk-gameplay">
+            <input id="hk-gameplay" type="checkbox" name="content-forms" value="hk-gameplay" /> IRL/Lifestyle Vlogs
+            </label>
+            <label for="trolling">
+            <input id="trolling" type="checkbox" name="content-forms" value="trolling" /> Cooking Videos
+            </label>
+            <label for="tactical">
+            <input id="tactical" type="checkbox" name="content-forms" value="tactical" /> Podcast-style Videos
+            </label>
+            <label for="other">
+            <input id="other" type="checkbox" name="content-forms" value="other" /> Other (Please specify in comments below)
+            </label>
+
+            <label for="comments">Any additional comments/sugguestions:
+            <textarea id="comments" name="commnets" rows="3" cols="30" placeholder="Please be kind <3"></textarea>
+            </label>
+        </fieldset>
+
+        <input type="submit" id="submit" value="Submit" />
+        </form>
+    </section>
+  </body>
+</html>
